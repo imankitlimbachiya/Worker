@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <com.worker.app.utility.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:text="@string/my_wallet"
+            android:textColor="@color/colorTextColor"
+            android:textSize="@dimen/_20sdp"
+            app:font_semibold="true" />
+
+        <View
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.worker.app.utility.MyTextView
+                android:id="@+id/txt_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text=""
+                android:textColor="@color/colorTextColor"
+                android:textSize="@dimen/_35sdp"
+                app:font_semibold="true" />
+
+            <com.worker.app.utility.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="@string/sar"
+                android:textColor="@color/colorTextColor"
+                android:textSize="@dimen/_21sdp"
+                app:font_semibold="true" />
+
+
+        </LinearLayout>
+
+        <com.worker.app.utility.MyButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:background="@drawable/wallet_voucher"
+            android:gravity="center"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingLeft="@dimen/_50sdp"
+            android:paddingRight="@dimen/_50sdp"
+            android:text="@string/reedeem_your_voucher_now"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_11sdp"
+            app:font_semibold="true"
+            android:textAllCaps="false"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:background="@drawable/gretter"/>
+
+            <com.worker.app.utility.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wallet_history"
+                android:paddingLeft="@dimen/_5sdp"
+                android:textColor="@color/notificationDescColor"
+                android:textSize="@dimen/_12sdp"
+                app:font_semibold="true" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/grey_400" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_walletDeatail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

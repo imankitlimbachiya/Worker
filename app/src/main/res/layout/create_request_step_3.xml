@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rel_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <com.worker.app.utility.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="@string/create_request"
+                        android:textColor="@color/grey_400"
+                        android:textSize="@dimen/_14sdp"
+                        app:font_semibold="true" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.worker.app.utility.MyTextView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@drawable/circle_bg"
+                            android:backgroundTint="@color/txt_squence_bg"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/grey_400"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_bold="true" />
+
+                        <View
+                            android:layout_width="@dimen/_33sdp"
+                            android:layout_height="4dp"
+                            android:background="@color/txt_squence_bg" />
+
+                        <com.worker.app.utility.MyTextView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@drawable/circle_bg"
+                            android:backgroundTint="@color/txt_squence_bg"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textColor="@color/txt_gray_color"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_bold="true" />
+
+                        <View
+                            android:layout_width="@dimen/_33sdp"
+                            android:layout_height="4dp"
+                            android:background="@color/txt_squence_bg" />
+
+                        <com.worker.app.utility.MyTextView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@drawable/circle_bg"
+                            android:backgroundTint="@color/txt_squence_bg"
+
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@color/txt_gray_color"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_bold="true" />
+
+                        <View
+                            android:layout_width="@dimen/_33sdp"
+                            android:layout_height="4dp"
+                            android:background="@drawable/view_bg" />
+
+                        <com.worker.app.utility.MyTextView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@drawable/circle_grey_bg"
+                            android:gravity="center"
+                            android:text="4"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_bold="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@drawable/view_bg" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_5sdp">
+
+                            <com.worker.app.utility.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/staff_gender"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_12sdp"
+                                app:font_regular="true" />
+
+                            <Spinner
+                                android:id="@+id/spinner_gender"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:background="@android:color/transparent"
+                                android:gravity="left"
+                                android:spinnerMode="dropdown" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:src="@drawable/gretter_down" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@drawable/view_bg" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_5sdp">
+
+                            <com.worker.app.utility.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/staff_age_range"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_12sdp"
+                                app:font_regular="true" />
+
+                            <Spinner
+                                android:id="@+id/spinner_age"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:background="@android:color/transparent"
+                                android:gravity="left"
+                                android:spinnerMode="dropdown" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:src="@drawable/gretter_down" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@drawable/view_bg" />
+
+                        <com.worker.app.utility.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="bottom"
+                            android:text="@string/let_us_know_workers_required_for_each_category"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_regular="true" />
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycle_quantity_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rel_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_alignParentBottom="true"
+        android:background="#EADCFE"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:orientation="horizontal">
+
+            <com.worker.app.utility.MyTextView
+                android:id="@+id/isAre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_weight="1.5"
+                android:gravity="center_vertical"
+                android:text="@string/total_workers_required_is"
+                android:textColor="@color/colorTitleGrey"
+                android:textSize="@dimen/_13sdp"
+                app:font_semibold="true" />
+
+            <com.worker.app.utility.MyTextView
+                android:id="@+id/total_count"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/colorTitleGrey"
+                android:textSize="@dimen/_20sdp"
+                app:font_semibold="true" />
+
+        </LinearLayout>
+
+        <com.worker.app.utility.MyButton
+            android:id="@+id/btn_next"
+            style="@style/PrimaryColoredButton"
+            android:text="@string/done"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:font_semibold="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"/>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

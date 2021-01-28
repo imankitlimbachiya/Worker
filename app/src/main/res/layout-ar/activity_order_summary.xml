@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:id="@+id/relativeMapParent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteSearch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_toLeftOf="@+id/imgSearch"
+                android:background="@null"
+                android:hint="@string/search_location"
+                android:maxLines="2"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <fragment
+                android:id="@+id/mapFragment"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scroll_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_pay"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_11sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <com.worker.app.utility.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:text="@string/order_summary"
+                    android:textColor="@color/colorTextColor"
+                    android:textSize="@dimen/_20sdp"
+                    app:font_semibold="true" />
+
+                <View
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/black" />
+
+                <com.worker.app.utility.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="@string/slect_your_service"
+                    android:textColor="@color/coloSubGrey"
+                    app:font_semibold="true" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_facility"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_drop_location"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.worker.app.utility.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/please_select_location"
+                            android:textColor="@color/colorTextColor"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_semibold="true" />
+
+                        <com.worker.app.utility.MyTextView
+                            android:id="@+id/edt_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorTextColor"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            app:font_semibold="true"
+                            android:textSize="@dimen/_12sdp"
+                            android:textDirection="rtl"
+                            android:background="@color/colorTransparent"
+                            android:layout_marginLeft="@dimen/_60sdp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginBottom="@dimen/_5sdp">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.7dp"
+                                android:layout_marginLeft="@dimen/_75sdp"
+                                android:background="@color/grey_400" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_map"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:background="@drawable/map_new" />
+
+                        <com.worker.app.utility.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/map_view"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/colorTextColor"
+                            android:textSize="@dimen/_7sdp"
+                            app:font_semibold="true" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_work_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_toRightOf="@+id/lin_work_map"
+                        android:orientation="vertical">
+
+                        <com.worker.app.utility.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/please_select_work_location"
+                            android:textColor="@color/colorTextColor"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_semibold="true" />
+
+                        <com.worker.app.utility.MyTextView
+                            android:id="@+id/edt_work_address"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            app:font_semibold="true"
+                            android:textColor="@color/colorTextColor"
+                            android:textSize="@dimen/_12sdp"
+                            android:background="@color/colorTransparent"
+                            android:textDirection="rtl"
+                            android:layout_marginLeft="@dimen/_35sdp"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.7dp"
+                                android:layout_marginLeft="@dimen/_35sdp"
+                                android:background="@color/grey_400" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_work_map"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:background="@drawable/map_new" />
+
+                        <com.worker.app.utility.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:text="@string/map_view"
+                            android:textColor="@color/colorTextColor"
+                            android:textSize="@dimen/_7sdp"
+                            app:font_semibold="true" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_43sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.worker.app.utility.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/coupuon_code"
+                            android:textColor="@color/colorTextColor"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_semibold="true" />
+
+                        <com.worker.app.utility.MyEditText
+                            android:id="@+id/edt_coupon"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            app:font_semibold="true"
+                            android:textColor="@color/colorTextColor"
+                            android:textSize="@dimen/_12sdp"
+                            android:background="@color/colorTransparent"
+                            android:textDirection="rtl"
+                            android:layout_marginLeft="@dimen/_80sdp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.7dp"
+                                android:layout_marginLeft="@dimen/_75sdp"
+                                android:background="@color/grey_400" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="vertical">
+
+                        <com.worker.app.utility.MyTextView
+                            android:id="@+id/btn_coupon"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/button_grey"
+                            android:gravity="center"
+                            android:text="@string/apply"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_semibold="true" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_43sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.worker.app.utility.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/wallet_amount"
+                                android:textColor="@color/colorTextColor"
+                                android:textSize="@dimen/_12sdp"
+                                app:font_semibold="true" />
+
+                            <com.worker.app.utility.MyTextView
+                                android:id="@+id/txt_totalwalletamount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="()"
+                                android:textColor="@color/colorTextColor"
+                                android:textSize="@dimen/_12sdp"
+                                app:font_semibold="true"
+                                android:layout_marginRight="@dimen/_3sdp"/>
+
+                        </LinearLayout>
+
+                        <com.worker.app.utility.MyEditText
+                            android:id="@+id/edt_apply"
+                            android:layout_width="@dimen/_200sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_height="wrap_content"
+                            app:font_semibold="true"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/colorTextColor"
+                            android:textSize="@dimen/_12sdp"
+                            android:background="@color/colorTransparent"
+                            android:textDirection="rtl"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.7dp"
+                                android:layout_marginLeft="@dimen/_75sdp"
+                                android:background="@color/grey_400" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_apply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="vertical">
+
+                        <com.worker.app.utility.MyTextView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/button_grey"
+                            android:gravity="center"
+                            android:text="@string/apply"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_semibold="true" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.worker.app.utility.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/total_contract_fees"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_semibold="true"
+                            android:gravity="right"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:orientation="horizontal">
+
+                            <com.worker.app.utility.MyTextView
+                                android:id="@+id/contract_total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp"
+                                app:font_semibold="true" />
+
+                            <com.worker.app.utility.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="@dimen/_3sdp"
+                                android:text="SAR"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_8sdp"
+                                app:font_semibold="true" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.worker.app.utility.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/add_ons_services"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_semibold="true"
+                            android:gravity="right"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:orientation="horizontal">
+
+                            <com.worker.app.utility.MyTextView
+                                android:id="@+id/addOnService"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp"
+                                app:font_semibold="true"/>
+
+                            <com.worker.app.utility.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="@dimen/_3sdp"
+                                android:text="SAR"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_8sdp"
+                                app:font_semibold="true" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.worker.app.utility.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/discount"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_semibold="true"
+                            android:gravity="right"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:orientation="horizontal">
+
+                            <com.worker.app.utility.MyTextView
+                                android:id="@+id/txt_discount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00.0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp"
+                                app:font_semibold="true" />
+
+                            <com.worker.app.utility.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="@dimen/_4sdp"
+                                android:text="SAR"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_8sdp"
+                                app:font_semibold="true" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.worker.app.utility.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/wallet_amount"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_semibold="true"
+                            android:gravity="right"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:orientation="horizontal">
+
+                            <com.worker.app.utility.MyTextView
+                                android:id="@+id/txt_WalletAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00.0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp"
+                                app:font_semibold="true" />
+
+                            <com.worker.app.utility.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="@dimen/_4sdp"
+                                android:text="SAR"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_8sdp"
+                                app:font_semibold="true" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.worker.app.utility.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/vat"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_semibold="true"
+                            android:gravity="right"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:orientation="horizontal">
+
+                            <com.worker.app.utility.MyTextView
+                                android:id="@+id/txt_tax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1982.5"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp"
+                                app:font_semibold="true" />
+
+
+                            <com.worker.app.utility.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="@dimen/_3sdp"
+                                android:text="SAR"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_8sdp"
+                                app:font_semibold="true" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.worker.app.utility.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/total"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_semibold="true"
+                            android:gravity="right"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:orientation="horizontal">
+
+                            <com.worker.app.utility.MyTextView
+                                android:id="@+id/txt_total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity=""
+                                android:text="41632.5 "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp"
+                                app:font_semibold="true" />
+
+                            <com.worker.app.utility.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="@dimen/_3sdp"
+                                android:text="SAR"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_8sdp"
+                                app:font_semibold="true" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <com.worker.app.utility.MyButton
+            android:id="@+id/btn_pay"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            style="@style/PrimaryColoredButton"
+            android:text="@string/pay_now"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone"
+            app:font_semibold="true"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+
+        <ImageView
+            android:id="@+id/img_xml_center_marker"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_green_pin"
+            android:visibility="gone"/>
+
+
+        <com.worker.app.utility.MyButton
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            style="@style/PrimaryColoredButton"
+            android:text="@string/get_address"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:textSize="@dimen/_10sdp"
+            android:visibility="gone"
+            app:font_semibold="true"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_forgot"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.8"
+            android:background="@android:color/black"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_layout"
+                android:backgroundTint="@android:color/white"
+                android:layout_centerHorizontal="true"
+                android:elevation="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/ic_launch"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_layout_normal"
+                android:layout_margin="@dimen/_25sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginBottom="@dimen/_10sdp">
+
+                    <com.worker.app.utility.MyTextView
+                        android:id="@+id/txt_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="More Info."
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:font_regular="true"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.worker.app.utility.MyTextView
+                            android:id="@+id/txt_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            app:font_regular="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:gravity="left"
+                            android:textSize="@dimen/_10sdp"/>
+
+                        <com.worker.app.utility.MyTextView
+                            android:id="@+id/txt_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            app:font_regular="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:textSize="@dimen/_10sdp"/>
+
+                    </LinearLayout>
+
+                    <com.worker.app.utility.MyButton
+                        android:id="@+id/btnClose"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        style="@style/PrimaryColoredButton"
+                        android:text="@string/close"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        app:font_semibold="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

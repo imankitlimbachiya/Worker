@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.worker.app.utility.MyTextView
+        android:id="@+id/txtCityName"
+        android:ellipsize="marquee"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        app:font_semibold="true"
+        android:layout_width="match_parent"
+        android:text="asdfasfd"
+        android:padding="@dimen/_12sdp"
+        android:layout_height="wrap_content"/>
+    <!--
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"-->
+
+</LinearLayout>

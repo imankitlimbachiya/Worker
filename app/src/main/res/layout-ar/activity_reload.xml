@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/network_error"
+            android:layout_gravity="center_horizontal"/>
+
+        <com.worker.app.utility.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/network_error"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#323232"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/_13sdp"
+            app:font_semibold="true"/>
+
+        <com.worker.app.utility.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/network_error_check"
+            android:textColor="#9FA0A1"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/_10sdp"
+            app:font_regular="true"/>
+
+        <com.worker.app.utility.MyButton
+            android:id="@+id/reload"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            style="@style/PrimaryColoredButton"
+            android:text="@string/network_reload"
+            android:padding="@dimen/_8sdp"
+            app:font_semibold="true" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp"
+            tools:context=".HomeActivity">
+
+            <!--slider-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewSlider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"/>
+
+            <LinearLayout
+                android:id="@+id/lin_category"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_7sdp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.worker.app.utility.MyTextView
+                            style="@style/TitleTextBigBlack"
+                            android:text="@string/findBCat"
+                            app:font_semibold="true" />
+
+                        <com.worker.app.utility.MyTextView
+                            style="@style/TitleTextSmallGrey"
+                            android:text="@string/exploreWorker"
+                            app:font_semibold="true" />
+
+                    </LinearLayout>
+
+                    <com.worker.app.utility.MyTextView
+                        android:id="@+id/all_category"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/strShowAll"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_regular="true" />
+
+                    <LinearLayout
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_below="@+id/all_category"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/indicator1"
+                            android:src="@drawable/bg_indicator_fill"
+                            android:layout_width="@dimen/_7sdp"
+                            android:layout_height="@dimen/_7sdp"/>
+
+                        <ImageView
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:id="@+id/indicator2"
+                            android:src="@drawable/bg_indicator_empty"
+                            android:layout_width="@dimen/_7sdp"
+                            android:layout_height="@dimen/_7sdp"/>
+
+                        <ImageView
+                            android:id="@+id/indicator3"
+                            android:src="@drawable/bg_indicator_empty"
+                            android:layout_width="@dimen/_7sdp"
+                            android:layout_height="@dimen/_7sdp"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_4sdp"/>
+
+            <LinearLayout
+                android:id="@+id/lin_country"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_7sdp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.worker.app.utility.MyTextView
+                            style="@style/TitleTextBigBlack"
+                            android:text="@string/ebCountry"
+                            app:font_semibold="true" />
+
+                        <com.worker.app.utility.MyTextView
+                            style="@style/TitleTextSmallGrey"
+                            android:text="@string/exploreBCountry"
+                            app:font_semibold="true" />
+
+                    </LinearLayout>
+
+                    <com.worker.app.utility.MyTextView
+                        android:id="@+id/all_country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/strShowAll"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_regular="true" />
+
+                    <LinearLayout
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_below="@+id/all_country"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/indicatorC1"
+                            android:src="@drawable/bg_indicator_fill"
+                            android:layout_width="@dimen/_7sdp"
+                            android:layout_height="@dimen/_7sdp"/>
+
+                        <ImageView
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:id="@+id/indicatorC2"
+                            android:src="@drawable/bg_indicator_empty"
+                            android:layout_width="@dimen/_7sdp"
+                            android:layout_height="@dimen/_7sdp"/>
+
+                        <ImageView
+                            android:id="@+id/indicatorC3"
+                            android:src="@drawable/bg_indicator_empty"
+                            android:layout_width="@dimen/_7sdp"
+                            android:layout_height="@dimen/_7sdp"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewCountries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+</RelativeLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.worker.app.utility.MyTextView
+        android:id="@+id/txt_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#323232"
+        android:textSize="@dimen/_15sdp"
+        app:font_semibold="true"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_120sdp">
+
+        <com.worker.app.utility.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:text="@string/my_request"
+            android:textColor="#323232"
+            android:textSize="@dimen/_23sdp"
+            app:font_semibold="true" />
+
+        <View
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_3sdp"
+            android:layout_marginLeft="@dimen/_22sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="#000000" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.worker.app.utility.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:text="@string/requested_workers_detail"
+                android:textColor="#323232"
+                android:textSize="@dimen/_14sdp"
+                app:font_semibold="true"
+                android:gravity="right"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+                <com.worker.app.utility.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_total_worker"
+                    android:textColor="#6EC0BD"
+                    android:textSize="@dimen/_14sdp"
+                    app:font_semibold="true" />
+
+                <com.worker.app.utility.MyTextView
+                    android:id="@+id/text_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:textColor="#6EC0BD"
+                    android:textSize="@dimen/_14sdp"
+                    app:font_semibold="true"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleview_request"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_5sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rel_request_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_alignParentBottom="true"
+        android:background="#8DF4DD"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.worker.app.utility.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:text="@string/requested_workers_detail"
+            android:textColor="@color/colorTitleGrey"
+            android:textSize="@dimen/_14sdp"
+            app:font_semibold="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:orientation="horizontal">
+
+            <com.worker.app.utility.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.65"
+                android:text="@string/txt_total_amount"
+                android:textColor="@color/colorTitleGrey"
+                android:textSize="@dimen/_14sdp"
+                app:font_semibold="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.worker.app.utility.MyTextView
+                    android:id="@+id/text_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/colorTitleGrey"
+                    android:textSize="@dimen/_18sdp"
+                    app:font_bold="true" />
+
+                <com.worker.app.utility.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sar"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:textColor="@color/colorTitleGrey"
+                    android:textSize="@dimen/_13sdp"
+                    app:font_bold="true" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <com.worker.app.utility.MyButton
+            android:id="@+id/btn_next"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            style="@style/PrimaryColoredButton"
+            android:text="@string/next"
+            app:font_semibold="true"
+            android:layout_marginBottom="@dimen/_25sdp"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

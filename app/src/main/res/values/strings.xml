@@ -1,0 +1,362 @@
+<resources>
+	<string name="googleAPIKey">AIzaSyA2vAa9ZnFNl0WYCGyGSUHhH7p80PWgT-Y</string><!--AIzaSyD8E9klNqaDsjLSALgMdsqCO-il0wVMSeA-->
+	<string name="app_name">Workers App</string>
+	<string name="open">Open</string>
+	<string name="close">Close</string>
+
+	<string name="d1_profile">My Profile</string>
+	<string name="d2_orders">My Orders</string>
+	<string name="d3_my_requests">My Requests</string>
+	<string name="d4_my_wallet">My Wallet</string>
+	<string name="d5_language">Language</string>
+	<string name="d6_settings">Settings</string>
+	<string name="d7_about_worker">About Worker</string>
+	<string name="d8_contact_us">Contact Us</string>
+	<string name="d9_privacy_policy"><![CDATA[Privacy & Policy]]></string>
+	<string name="d10_terms_condition"><![CDATA[Terms & Conditions]]></string>
+	<string name="d11_logout">Logout</string>
+	<string name="d12_login">Login</string>
+	<string name="d13_myRequestOrder">My Request Order</string>
+	<string name="d14_myWorker">My Workers</string>
+	<string name="findBCat">Find by Category</string>
+	<string name="exploreWorker">Explore our certified workers by category</string>
+	<string name="ebCountry">Explore by Country</string>
+	<string name="exploreBCountry">Explore our certified workers by country</string>
+	<string name="strShowAll">Show All</string>
+	<string name="allResults"> </string>
+	<string name="strProfiles">3650 profiles</string>
+	<string name="strLanguages">Languages</string>
+	<string name="login">Login</string>
+	<string name="mobile_number_email">Mobile Number / Email</string>
+	<string name="forget_password">Forgot Password?</string>
+	<string name="sign_up">Sign Up</string>
+	<string name="about_workers_app">About Workers App</string>
+	<string name="register_in_workers_app_as_individual">Register in Workers app as Individual</string>
+	<string name="name">Name</string>
+	<string name="email">Email</string>
+	<string name="mobile_number">Mobile Number</string>
+	<string name="password">Password</string>
+	<string name="confirm_password">Confirm Password</string>
+	<string name="company_name">Company Name</string>
+	<string name="register_in_workers_app_as_corporate">Register in Workers app as Corporate</string>
+	<string name="noData">No Worker Found...</string>
+	<string name="individual_account">Individual Account</string>
+	<string name="corporate_account">Corporate Account</string>
+	<string name="alertlogout">Are you sure you want to Logout?</string>
+	<string name="alertdeleterequest">Are you sure you want to cancel worker request?</string>
+	<string name="alertdeletedocument">Are you sure you want to remove the document?</string>
+	<string name="alertdeleteorder">Are you sure you want to cancel the order?</string>
+	<string name="removedocument">Remove Document</string>
+	<string name="cancelorder">Cancel Order</string>
+	<string name="cancerequest">Cancel Worker Request</string>
+	<string name="city">City</string>
+	<string name="Yes">Yes</string>
+	<string name="No">No</string>
+	<string name="city_select">Select City</string>
+
+	//My Request//
+	<string name="my_request">My Request</string>
+	<string name="requested_workers_detail">Requested workers detail</string>
+	<string name="txt_total_amount">Total Amount</string>
+	<string name="txt_total_worker">Total requested workers</string>
+	<string name="select_language">Select Language</string>
+	<string name="arabic_txt_select_language">إختر اللغة</string>
+	<string name="agreement_policy">Privacy Policy</string>
+	<string name="agree_policy">Agreement Policy</string>
+	<string name="terms_and_condition_txt"><![CDATA[Terms & Conditions]]></string>
+	<string name="our_promises">Our Promises</string>
+
+	// Thank you//
+	<string name="thankyou">Thank You</string>
+	<string name="backButton">Back to Home</string>
+	<string name="thankYou_description1">Our support team will send you the workers profiles based on your request.</string>
+	<string name="thankYou_description2">This action maybe take 24 hours some time, So you will got be notified by email, SMS, and through the mobile app.</string>
+	<string name="from_where_you_want_get_workers">From where you want get workers?</string>
+	<string name="search_text">Search for...</string>
+	<string name="explore_text">Explore our certified workers by category</string>
+	<string name="explore_text11">Explore our certified Workers by Country</string>
+
+	// My Request Listing//
+	<string name="myrequestlisting">My Request Listing</string>
+	<string name="workersDetail">Requested workers detail</string>
+	<string name="requst_id">Request Id</string>
+	<string name="nationality">Nationality</string>
+	<string name="category">Category</string>
+	<string name="requested_workers">Requested workers</string>
+	<string name="totalmatchingworkers">Total matching workers</string>
+	<string name="tab_to_view">Tap to View</string>
+	<string name="status">Status</string>
+	<string name="inprogress">In progress</string>
+	<string name="viewrequest">View Request</string>
+	<string name="requst_date">Request date</string>
+
+	// My Order Listing
+	<string name="myorderlisting">My Order Listing</string>
+	<string name="total_contract_fees">Total Contract fees</string>
+	<string name="add_ons_services">Add-ons services</string>
+	<string name="discount">Discount</string>
+	<string name="total">Total</string>
+	<string name="download_invoice">Download Invoice</string>
+	<string name="download_contract">Download Contract</string>
+	<string name="order_id">Order Id</string>
+	<string name="order_date">Order date</string>
+    <string name="cancel_">Cancel Order</string>
+
+	// Order summary
+	<string name="order_summary">Order Summary</string>
+	<string name="slect_your_service">Select your add-ons services</string>
+	<string name="info1">Worker visa clearance at airport and drop worker to your location</string>
+	<string name="more_info">More Info</string>
+	<string name="info2">Accommodation for worker</string>
+	<string name="please_select_location">Please select drop location*</string>
+	<string name="please_select_work_location">Please select work location*</string>
+	<string name="map_view">Map view</string>
+	<string name="apply">Apply</string>
+	<string name="pay_now">Pay Now</string>
+	<string name="coupuon_code">Coupon code</string>
+    <string name="validaddress">Please enter valid address</string>
+    <string name="validworkaddress">Please enter valid work address</string>
+    <string name="applycoupon">Please Enter Coupon code</string>
+    <string name="youhave">You have</string>
+    <string name="sarinyourwallet">SAR in your wallet</string>
+    <string name="usedwalletamount">Please Enter Wallet Amount</string>
+	<string name="wallet_amount">Wallet amount</string>
+	<string name="vat">VAT</string>
+    <string name="gps">GPS turned off</string>
+    <string name="gpsalert">GPS is not enabled. Do you want to go to settings menu ?</string>
+    <string name="gpsetting">Settings</string>
+    <string name="gpcancel">Cancel</string>
+	<string name="couponalert">You cannot apply coupon amount more than worker\'s contract fees</string>
+	<string name="couponRemove">Remove</string>
+	<string name="removeCoupon">Coupon removed successfully</string>
+	<string name="cpn1">you cannot apply coupon on VAT and add-ons services</string>
+
+	// Notification
+	<string name="notification_alert">Notification Alert OFF/ON</string>
+
+	// Wallet
+	<string name="my_wallet">My Wallet</string>
+	<string name="wallet_history">Wallet History</string>
+	<string name="Order_id">Order ID: </string>
+	<string name="reedeem_your_voucher_now">Redeem your voucher now !</string>
+	<string name="enterwalletamountmustbelessthen">You cannot apply coupon amount more than worker\'s contract fees</string>
+	<string name="wallet_success">Wallet amount applied successfully</string>
+	<string name="walMsg">Entered amount must be less than Wallet amount</string>
+	<string name="walMsg1">Entered amount must be less than Total amount</string>
+
+	// Visa Detail
+	<string name="visa_detail">Visa Detail</string>
+	<string name="please_upload_your_id_visa">Please upload Your Id / visa</string>
+	<string name="please_write_your_id_number">Please write Your Id number</string>
+	<string name="you_can_use_camera">You can use camera or upload PDF/JPEG/PNG</string><!--قم بالنقر على الايقونة الجانبية لارفاق صورة الهوية-->
+	<string name="you_can_use_camera_to_upload">You can use camera or upload PDF/JPEG/PNG</string><!--The visa image must be attached according to the specified country by clicking on the side icon-->
+	<string name="country_name">Country name:</string>
+	<string name="click_here">Click Here</string>
+	<string name="next">Next</string>
+	<string name="opencamera">Open Camera</string>
+	<string name="choosefromgallery">Choose From Gallery</string>
+
+	// My Workers
+	<string name="my_workers">My Workers</string>
+	<string name="workers_name">Worker name</string>
+	<string name="contract_fees">Contract fees</string>
+	<string name="timeline">Timeline</string>
+	<string name="all_my_workers">All My Workers</string>
+	<string name="completed">Completed</string>
+	<string name="on_going">On Going</string>
+	<string name="no_records_found">No Records Found!</string>
+
+	// View request detail
+	<string name="view_request_details">View Request details</string>
+	<string name="country">Country</string>
+	<string name="age_range">Age range</string>
+	<string name="total_categories">Total Categories</string>
+	<string name="categoryname">Category name</string>
+	<string name="sub_category">Sub category</string>
+	<string name="quantity">Quantity</string>
+	<string name="worker_name">Worker name</string>
+	<string name="religon">Religion</string>
+	<string name="age">Age</string>
+	<string name="sar">SAR</string>
+	<string name="gender">Gender</string>
+	<string name="networkcheck">networkCheck</string>
+	<string name="alertfirstname">Please Enter Name</string>
+	<string name="alertfirstnamec">Please Enter Company Name</string>
+	<string name="alertEmailAddress">Please Enter Email address</string>
+	<string name="alertEmailAddressandmobile">Please Enter Mobile Number or Email</string>
+	<string name="alertValid_Email_Mobile">Email or Mobile number is not correct</string>
+	<string name="alertmobile">Please Enter Phone number</string>
+	<string name="alertcompName">Please Enter Company name</string>
+	<string name="alertpassword">Please Enter Password</string>
+	<string name="alertcity">Please Select your City</string>
+	<string name="alertnewpassword">Please Enter New Password</string>
+	<string name="alertoldpassword">Please Enter Old Password</string>
+	<string name="alertConfirmpassword">Please Enter Confirm Password</string>
+	<string name="alertConfirmpasswordandpassword">Password and Confirm Password is not matching</string>
+	<string name="alertvalidemail">Please Enter Valid Email address</string>
+	<string name="alertvalidpasswordi">Please Enter at least 5 Character of Password</string>
+	<string name="alertvalidpassword">Password must be greater than 4 characters</string>
+	<string name="alertvalidpasswordc">Please Enter at least 5 Character of Confirm Password</string>
+	<string name="alertvalidmobile">Mobile number should be between 8 to 13 digits</string>
+	<string name="logout">Logout</string>
+	<string name="are_you_sure_logout">Are you sure want to Logout ?</string>
+	<string name="invalid_password">Invalid Password</string>
+	<string name="invalid_mobile">Invalid Mobile Number</string>
+	<string name="invalid_name">Invalid Name</string>
+	<string name="confirm">Yes</string>
+	<string name="cancel">No</string>
+	<string name="skip">Skip</string>
+	<string name="about_worker">About Worker</string>
+	<string name="contact_us">Contact Us</string>
+	<string name="sign_in">Sign In</string>
+	<string name="forgot_password">Forgot Password?</string>
+	<string name="you_don_t_remember_your_password">Please enter the Mobile number / Email which you used to register. We will then send you a new password.</string>
+	<string name="send">Send</string>
+	<string name="title">Title</string>
+	<string name="my_profile">My Profile</string>
+	<string name="name_or_company_name">Name</string>
+	<string name="comp_name">Company name</string>
+	<string name="submit">Submit</string>
+	<string name="you_want_to_change_your_password_enter_valid_detail">Please fill following fields to modify your password</string>
+	<string name="old_password">Old Password</string>
+	<string name="change__password">Change Password</string>
+	<string name="new_password">New Password</string>
+	<string name="change_password">Change Password</string>
+	<string name="register_with_us">Register with us</string>
+	<string name="sign_up_now_and_select_your_account_type">Select your account type and sign up now</string>
+	<string name="terms_amp_condition"><![CDATA[Terms & Conditions]]></string>
+	<string name="arabic_medical_staff">Arabic Medical Staff</string>
+	<string name="medical_staff">Medical Staff</string>
+	<string name="find_by_subcategory">Find by Sub category</string>
+	<string name="explore_our_certified_workers_by_category">Explore our certified workers by category</string>
+	<string name="terms_amp_conditions"><![CDATA[Terms & Conditions]]></string>
+	<string name="search_location">Search Location</string>
+	<string name="get_address">Get Address</string>
+	<string name="checkid">Please Enter Your Id Number</string>
+	<string name="checkidproof">Please attach your Id proof</string>
+	<string name="checkcountryvisaproof">Please update id for all country</string>
+	<string name="name_z_to_a">Name : Z to A</string>
+	<string name="name_a_to_z">Name : A to Z</string>
+	<string name="ContractFees_high_to_low">Contract Fees : High to Low</string>
+	<string name="ContractFees_low_to_high">Contract Fees : Low to High</string>
+	<string name="our_recommendation">Our Recommendation</string>
+	<string name="sort_by">Sort by :</string>
+
+	// workerListing &amp; Profile
+	<string name="profile">Profile</string>
+	<string name="monthly_salary">Monthly salary</string>
+	<string name="year">year</string>
+	<string name="view_profile">View Profile</string>
+	<string name="hire_now">Hire Now</string>
+	<string name="birthday">Birthdate</string>
+	<string name="education">Education</string>
+	<string name="experience">Experience</string>
+	<string name="attachment">Attachment</string>
+	<string name="more_information_about_the_worker_you_can_see_his_video_and_cv">More information about the worker:</string>
+	<string name="see_video">See Video</string>
+	<string name="view_cv">View CV</string>
+	<string name="add_to_my_request">Add to My Request</string>
+
+	// applyVisa Activity
+	<string name="attach_your_id_please">Attach your Id please</string>
+	<string name="workers_number">No. of worker: </string>
+
+	//createRequest Step 1
+	<string name="create_request">Create request</string>
+	<string name="you_select">You Select</string>
+	<string name="Search_for">Search for...</string>
+
+	//createRequest Step 2
+	<string name="select_your_workers_category">Select your workers Category</string>
+	<string name="other_category">Others</string>
+	<string name="arabic_other_category">الآخرين</string>
+	<string name="search_your_category">Add Your Requested Category</string>
+	<string name="category_name">Category Name</string>
+	<string name="save">Save</string>
+	<string name="sendMsg">Send Message</string>
+
+	//createRequest Step 3
+	<string name="staff_gender">Staff Gender</string>
+	<string name="staff_age_range">Staff Age range</string>
+	<string name="let_us_know_workers_required_for_each_category">Let us know workers required for each category</string>
+	<string name="total_workers_required_is">Total workers required is</string>
+	<string name="total_workers_required_are">Total workers are required</string>
+	<string name="done">Done</string>
+
+	// Matching request Activity
+	<string name="matching_your_request">Matching your Request</string>
+	<string name="we_not_found">We not found Workers for matching your previous requests</string>
+	<string name="we_found">We found</string>
+	<string name="worker_matching">Workers matching your previous requests</string>
+	<string name="profile_">Profiles</string>
+
+	// option menu
+	<string name="remove">Cancel Worker Request</string>
+	<string name="delete">Remove Document</string>
+
+	// drawer menu
+	<string name="guest">Guest</string>
+	<string name="hiii">Hi</string>
+
+	// intro screen
+	<string name="next_">Next التالى</string>
+	<string name="skip_">Skip تخطى</string>
+
+	// view order delivery Activity
+	<string name="departed_date">Departed date</string>
+	<string name="from">From</string>
+	<string name="arrive">Arrive</string>
+	<string name="to">To</string>
+
+	// Setting Activity
+    <string name="setting">Settings</string>
+    <string name="notification">Notification</string>
+	<string name="allow_notification">Allow Notification</string>
+    <string name="marketing_preferences">Marketing Preferences</string>
+	<string name="security_amp_location"><![CDATA[Security & Location]]></string>
+	<string name="automatic_location">Automatic Location</string>
+
+	// Announcement Activity
+	<string name="my_announcement">My Announcement</string>
+
+    // ContactUs Activity
+    <string name="name_c">Name</string>
+    <string name="email_c">Email</string>
+    <string name="phone_c">Phone</string>
+    <string name="Question_c">Questions</string>
+    <string name="alertquestions">Please Enter Questions</string>
+
+    // Reload Activity
+    <string name="network_error">Network Error</string>
+    <string name="network_error_check">Please check your network connection</string>
+    <string name="network_reload">Click to reload</string>
+
+    // Payment Activity
+    <string name="payment">Pay Now</string>
+    <string name="card_number">Card number</string>
+    <string name="card_holder_name">Card holder\'s name</string>
+    <string name="card_exp_date">Card Exp. date</string>
+    <string name="cvv_number">CVV number</string>
+    <string name="payment_sure">Are you sure you want to pay through this card?</string>
+    <string name="alertcardno">Please Enter Card Number</string>
+	<string name="valid_card_number_length">Please enter valid card number</string>
+    <string name="alertcardholdername">Please Enter Card Holder Name</string>
+    <string name="alertcardexp">Please Select Card Exp. Date</string>
+    <string name="alertcardcvv">Please Enter Card CVV Number</string>
+    <string name="paymentpay">Payment</string>
+	<string name="walValidation">Invalid wallet amount</string>
+	<string name="walValidationM">You cannot apply wallet amount more than total amount</string>
+	<string name="text_confirm">CONFIRM</string>
+	<string name="text_cancel">CANCEL</string>
+	<string name="cardTypeMsg">Please select card type</string>
+	<string name="somethingWrong">Oops! something went wrong! Please try again..</string>
+	<string name="fileSizeCheck">File size must be less than 15 mb</string>
+	<string name="cardCredential">Please check card details</string>
+	<string name="NoVideo">No video provided</string>
+	<string name="buffering">Buffering video please wait...</string>
+
+	<string name="newVersion">New version available</string>
+	<string name="plzUpdate">Please update app for seamless experience.</string>
+	<string name="cont">Continue</string>
+	<string name="categ">Please enter category name</string>
+</resources>

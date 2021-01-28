@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/our_recommendation"
+        android:title="@string/our_recommendation"/>
+
+    <item
+        android:id="@+id/price_low_to_high"
+        android:title="@string/ContractFees_low_to_high" />
+
+    <item
+        android:id="@+id/price_high_to_low"
+        android:title="@string/ContractFees_high_to_low" />
+
+    <item
+        android:id="@+id/name_a_to_z"
+        android:title="@string/name_a_to_z" />
+
+    <item
+        android:id="@+id/name_z_to_a"
+        android:title="@string/name_z_to_a" />
+
+</menu>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/_8sdp"
+				android:orientation="vertical">
+				
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+					
+					<LinearLayout
+						android:id="@+id/Lin_back"
+						android:layout_marginTop="@dimen/_5sdp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal">
+						
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_vertical"
+							android:src="@drawable/arrow_back"/>
+						
+						<com.worker.app.utility.MyTextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="@dimen/_13sdp"
+							android:text="@string/login"
+							android:textColor="#ABABAB"
+							android:textSize="@dimen/_15sdp"
+							app:font_regular="true" />
+					
+					</LinearLayout>
+					
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/_48sdp"
+						android:orientation="vertical">
+						
+						<com.worker.app.utility.MyTextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/register_with_us"
+							android:textColor="@android:color/black"
+							android:textSize="@dimen/_23sdp"
+							app:font_semibold="true" />
+						
+						<View
+							android:layout_width="@dimen/_55sdp"
+							android:layout_height="@dimen/_3sdp"
+							android:layout_marginTop="@dimen/_3sdp"
+							android:background="@android:color/black" />
+						
+						<com.worker.app.utility.MyTextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/_28sdp"
+							android:text="@string/sign_up_now_and_select_your_account_type"
+							android:textSize="@dimen/_10sdp"
+							app:font_regular="true" />
+					
+					</LinearLayout>
+				
+				</LinearLayout>
+				
+				<RelativeLayout
+					android:id="@+id/Rel_indi_signup"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/_95sdp"
+					android:layout_marginTop="@dimen/_5sdp"
+					android:background="@drawable/signup_bg_greeen">
+					
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentBottom="true"
+						android:orientation="vertical"
+						android:padding="@dimen/_23sdp">
+						
+						<com.worker.app.utility.MyTextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/individual_account"
+							android:textColor="@color/black"
+							android:textSize="@dimen/_20sdp"
+							app:font_semibold="true" />
+						
+						<View
+							android:layout_width="@dimen/_55sdp"
+							android:layout_height="@dimen/_3sdp"
+							android:layout_marginTop="@dimen/_3sdp"
+							android:background="@android:color/black" />
+					
+					</LinearLayout>
+
+				</RelativeLayout>
+				
+				<RelativeLayout
+					android:id="@+id/Rel_cor_signup"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/_95sdp"
+					android:layout_marginTop="@dimen/_13sdp"
+					android:background="@drawable/signup_bg_blue">
+					
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentBottom="true"
+						android:orientation="vertical"
+						android:padding="@dimen/_23sdp">
+						
+						<com.worker.app.utility.MyTextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/corporate_account"
+							android:textColor="@color/black"
+							android:textSize="@dimen/_20sdp"
+							app:font_semibold="true" />
+						
+						<View
+							android:layout_width="@dimen/_55sdp"
+							android:layout_height="@dimen/_3sdp"
+							android:layout_marginTop="@dimen/_3sdp"
+							android:background="@android:color/black" />
+					
+					</LinearLayout>
+				
+				</RelativeLayout>
+			
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_margin="@dimen/_13sdp"
+				android:orientation="vertical">
+				
+				<RelativeLayout
+					android:id="@+id/Rel_agreement"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+					
+					<com.worker.app.utility.MyTextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/agreement_policy"
+						android:textColor="#323232"
+						android:textSize="@dimen/_13sdp"
+						android:textStyle="normal"
+						app:font_semibold="true" />
+					
+					<ImageView
+						android:layout_width="@dimen/_13sdp"
+						android:layout_height="@dimen/_13sdp"
+						android:layout_alignParentEnd="true"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:layout_gravity="center"
+						android:src="@drawable/right_arrow" />
+				
+				</RelativeLayout>
+				
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/_1sdp"
+					android:layout_marginTop="@dimen/_3sdp"
+					android:background="#EDEDED" />
+				
+				<RelativeLayout
+					android:id="@+id/Rel_terms"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/_18sdp"
+					android:orientation="horizontal">
+					
+					<com.worker.app.utility.MyTextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/terms_amp_condition"
+						android:textColor="#323232"
+						android:textSize="@dimen/_13sdp"
+						app:font_semibold="true" />
+					
+					<ImageView
+						android:layout_width="@dimen/_13sdp"
+						android:layout_height="@dimen/_13sdp"
+						android:layout_alignParentEnd="true"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:layout_gravity="center"
+						android:src="@drawable/right_arrow" />
+				
+				</RelativeLayout>
+				
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/_1sdp"
+					android:layout_marginTop="@dimen/_3sdp"
+					android:background="#EDEDED" />
+				
+				<RelativeLayout
+					android:id="@+id/Rel_promises"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/_18sdp"
+					android:orientation="horizontal">
+					
+					<com.worker.app.utility.MyTextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/our_promises"
+						android:textColor="#323232"
+						android:textSize="@dimen/_13sdp"
+						app:font_semibold="true" />
+					
+					<ImageView
+						android:layout_width="@dimen/_13sdp"
+						android:layout_height="@dimen/_13sdp"
+						android:layout_alignParentEnd="true"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:layout_gravity="center"
+						android:src="@drawable/right_arrow" />
+				
+				</RelativeLayout>
+				
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/_1sdp"
+					android:layout_marginTop="@dimen/_3sdp"
+					android:layout_marginBottom="@dimen/_28sdp"
+					android:background="#EDEDED" />
+			
+			</LinearLayout>
+		
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>

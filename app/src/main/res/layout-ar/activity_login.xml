@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@android:color/white">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.worker.app.utility.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:layout_marginRight="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_23sdp"
+            app:font_semibold="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_23sdp"/>
+
+        <View
+            android:layout_width="@dimen/_53sdp"
+            android:layout_height="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@android:color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/_13sdp"
+        android:orientation="vertical">
+
+        <com.worker.app.utility.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mobile_number_email"
+            android:textColor="#323232"
+            android:textSize="@dimen/_13sdp"
+            app:font_semibold="true"/>
+
+        <com.worker.app.utility.MyEditText
+            android:id="@+id/edt_email_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:background="@drawable/edt_bg_selector_black"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="#323232"
+            android:textCursorDrawable="@drawable/color_cursor_normal"
+            android:textDirection="rtl"
+            android:gravity="right"/>
+
+        <com.worker.app.utility.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/password"
+            android:textColor="#323232"
+            android:textSize="@dimen/_13sdp"
+            app:font_semibold="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.worker.app.utility.MyEditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_36sdp"
+                android:background="@drawable/edt_bg_selector_black"
+                android:imeOptions="actionDone|actionGo"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="@dimen/_13sdp"
+                android:textCursorDrawable="@drawable/color_cursor_normal"
+                android:gravity="right"
+                android:textDirection="rtl"/>
+            <ImageView
+                android:id="@+id/imagepassword"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/passhide"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_alignParentLeft="true"
+                />
+        </RelativeLayout>
+
+
+        <com.worker.app.utility.MyTextView
+            android:id="@+id/txt_forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/forget_password"
+            android:textColor="#9FA0A1"
+            android:textSize="@dimen/_10sdp"
+            app:font_regular="true"/>
+
+        <com.worker.app.utility.MyButton
+            android:id="@+id/sign_in"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            style="@style/PrimaryColoredButton"
+            android:text="@string/sign_in"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:font_semibold="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_13sdp">
+
+        <RelativeLayout
+            android:id="@+id/Rel_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.worker.app.utility.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up"
+                android:textColor="#323232"
+                android:textStyle="normal"
+                app:font_semibold="true"
+                android:textSize="@dimen/_13sdp" />
+
+            <ImageView
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/s_arrow"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="#EDEDED" />
+
+        <RelativeLayout
+            android:id="@+id/Rel_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="horizontal">
+
+            <com.worker.app.utility.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_workers_app"
+                android:textColor="#323232"
+                android:textSize="@dimen/_13sdp"
+                app:font_semibold="true"/>
+
+            <ImageView
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/s_arrow"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="#EDEDED"
+            android:layout_marginBottom="@dimen/_28sdp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

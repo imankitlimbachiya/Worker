@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp">
+
+            <com.worker.app.utility.MyTextView
+                android:id="@+id/txtDegree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MBA"
+                android:textColor="@color/colorTextColor"
+                android:textSize="@dimen/_12sdp"
+                app:font_semibold="true" />
+
+            <com.worker.app.utility.MyTextView
+                android:id="@+id/txtUni"
+                android:layout_width="wrap_content"
+                android:text="University"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDegree"
+                android:textColor="@color/notificationDescColor"
+                android:textSize="@dimen/_10sdp" />
+
+        </RelativeLayout>
+
+        <com.worker.app.utility.MyTextView
+            android:id="@+id/txtYear"
+            android:text="2015"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/notificationDescColor"
+            android:textSize="@dimen/_10sdp"
+            app:font_semibold="true" />
+
+    </LinearLayout>
+
+   <!-- <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:background="@color/divider" />-->
+</LinearLayout>

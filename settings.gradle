@@ -1,0 +1,2 @@
+include ':app', ':oppwa.mobile.alipay-2.29.1', ':oppwa.mobile-2.29.1'
+rootProject.name='android-worker-app'

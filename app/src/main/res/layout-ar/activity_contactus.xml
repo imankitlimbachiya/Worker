@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="false"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:id="@+id/linearContactLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.worker.app.utility.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:text="@string/contact_us"
+            android:textColor="@color/colorTextColor"
+            android:textSize="@dimen/_20sdp"
+            app:font_semibold="true" />
+
+        <View
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/linearContactLabel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_margin="@dimen/_15sdp"
+        android:orientation="vertical">
+
+        <com.worker.app.utility.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name_c"
+            android:textColor="#323232"
+            android:textSize="@dimen/_13sdp"
+            app:font_semibold="true"/>
+
+        <com.worker.app.utility.MyEditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:background="@drawable/edt_bg_selector_black"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="#323232"
+            android:textCursorDrawable="@drawable/color_cursor_normal" />
+
+        <com.worker.app.utility.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/email_c"
+            android:textColor="#323232"
+            android:textSize="@dimen/_13sdp"
+            app:font_semibold="true"/>
+
+        <com.worker.app.utility.MyEditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:background="@drawable/edt_bg_selector_black"
+            android:imeOptions="actionDone|actionGo"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textSize="@dimen/_13sdp"
+            android:textCursorDrawable="@drawable/color_cursor_normal" />
+
+        <com.worker.app.utility.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/phone_c"
+            android:textColor="#323232"
+            android:textSize="@dimen/_13sdp"
+            app:font_semibold="true"/>
+
+        <com.worker.app.utility.MyEditText
+            android:id="@+id/edt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:maxLength="13"
+            android:background="@drawable/edt_bg_selector_black"
+            android:imeOptions="actionDone|actionGo"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textSize="@dimen/_13sdp"
+            android:textCursorDrawable="@drawable/color_cursor_normal" />
+
+        <com.worker.app.utility.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/Question_c"
+            android:textColor="#323232"
+            android:textSize="@dimen/_13sdp"
+            app:font_semibold="true"/>
+
+        <com.worker.app.utility.MyEditText
+            android:id="@+id/edt_question"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:background="@drawable/edt_bg_selector_black"
+            android:imeOptions="actionDone|actionGo"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="@dimen/_13sdp"
+            android:textCursorDrawable="@drawable/color_cursor_normal" />
+
+        <com.worker.app.utility.MyButton
+            android:id="@+id/save"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            style="@style/PrimaryColoredButton"
+            android:text="@string/sendMsg"
+            app:font_semibold="true"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

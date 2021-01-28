@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MyProfileActivity"
+    android:background="@android:color/white"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.worker.app.utility.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_profile"
+            android:textColor="@color/colorTextColor"
+            android:textSize="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:font_semibold="true" />
+
+        <View
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/linearBox"
+        android:layout_margin="@dimen/_15sdp"
+        android:orientation="vertical">
+
+        <com.worker.app.utility.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comp_name"
+            android:id="@+id/txtCompName"
+            android:textColor="#323232"
+            android:textSize="@dimen/_12sdp"
+            app:font_semibold="true"/>
+
+        <com.worker.app.utility.MyEditText
+            android:id="@+id/edt_compName"
+            android:textDirection="rtl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/edt_bg_selector_black"
+            android:imeOptions="actionDone|actionGo"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="#323232"
+            android:textCursorDrawable="@drawable/color_cursor_normal" />
+
+        <com.worker.app.utility.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name_or_company_name"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="#323232"
+            android:textSize="@dimen/_12sdp"
+            app:font_semibold="true"/>
+
+        <com.worker.app.utility.MyEditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:background="@drawable/edt_bg_selector_black"
+            android:imeOptions="actionDone|actionGo"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="#323232"
+            android:textCursorDrawable="@drawable/color_cursor_normal"
+            android:textDirection="rtl"/>
+
+        <com.worker.app.utility.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/email"
+            android:textColor="#323232"
+            android:textSize="@dimen/_12sdp"
+            app:font_semibold="true"/>
+
+        <com.worker.app.utility.MyEditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:background="@drawable/edt_bg_normal"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="#323232"
+            android:textCursorDrawable="@drawable/color_cursor_normal"
+            android:textDirection="rtl"/>
+
+        <com.worker.app.utility.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/mobile_number"
+            android:textColor="#323232"
+            android:textSize="@dimen/_12sdp"
+            app:font_semibold="true"/>
+
+        <com.worker.app.utility.MyEditText
+            android:id="@+id/edt_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:background="@drawable/edt_bg_normal"
+            android:textSize="@dimen/_12sdp"
+            android:maxLength="13"
+            android:inputType="number"
+            android:textColor="#323232"
+            android:textCursorDrawable="@drawable/color_cursor_normal"
+            android:textDirection="rtl"/>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edt_bg_normal"
+            android:orientation="horizontal">
+
+            <com.worker.app.utility.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/city"
+                android:layout_centerVertical="true"
+                android:textColor="#323232"
+                android:textSize="@dimen/_13sdp"
+                app:font_semibold="true" />
+
+            <com.worker.app.utility.MyTextView
+                android:id="@+id/City"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:imeOptions="actionNext"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:id="@+id/down_arrow"
+                android:padding="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/gretter_down" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginStart="@dimen/_minus13sdp"
+            android:layout_marginEnd="@dimen/_minus13sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edt_bg_selector_individual"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerCity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <com.worker.app.utility.MyButton
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:text="@string/submit"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            style="@style/PrimaryColoredButton"
+            app:font_semibold="true"
+            android:paddingLeft="@dimen/_35sdp"
+            android:paddingRight="@dimen/_35sdp"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_15sdp">
+
+        <RelativeLayout
+            android:id="@+id/Rel_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.worker.app.utility.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change_password"
+                android:textColor="#323232"
+                android:textSize="@dimen/_12sdp"
+                app:font_semibold="true"/>
+
+            <ImageView
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/s_arrow"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="#EDEDED"
+            android:layout_marginBottom="@dimen/_28sdp"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

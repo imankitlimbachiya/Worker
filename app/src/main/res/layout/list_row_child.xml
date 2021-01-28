@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginLeft="@dimen/_15sdp"
+    android:layout_marginRight="@dimen/_15sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:focusableInTouchMode="true">
+
+    <com.worker.app.utility.MyTextView
+        android:id="@+id/txt_subcategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="emergency medicine"
+        android:textColor="@android:color/black"
+        android:paddingLeft="@dimen/_25sdp"
+        android:paddingRight="@dimen/_25sdp"
+        android:padding="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:layout_weight="1"
+        app:font_regular="true"/>
+
+    <Spinner
+        android:id="@+id/spinner_qty"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_button"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:gravity="center_horizontal"
+        android:spinnerMode="dropdown" />
+
+  <!--  <example.kalp.workerapp.utility.MyEditText
+        android:id="@+id/txt_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:singleLine="true"
+        android:imeOptions="actionDone|actionGo"
+        android:gravity="center"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@android:color/darker_gray"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_button"
+        android:layout_centerVertical="true"
+        app:font_regular="true"
+        android:visibility="gone"/>-->
+
+</LinearLayout>

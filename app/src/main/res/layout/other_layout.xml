@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_layout_normal"
+        android:layout_marginTop="@dimen/_30sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+            <com.worker.app.utility.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_your_category"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/black"
+                app:font_regular="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_40sdp"/>
+
+            <com.worker.app.utility.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_name"
+                android:textColor="#323232"
+                app:font_semibold="true"
+                android:layout_marginTop="@dimen/_15sdp"/>
+
+            <com.worker.app.utility.MyEditText
+                android:id="@+id/edt_search"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:background="@drawable/edt_bg_selector_black"
+                android:imeOptions="actionDone|actionGo"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="#323232"
+                android:textCursorDrawable="@drawable/color_cursor_normal" />
+
+
+            <com.worker.app.utility.MyButton
+                android:id="@+id/btnSearch"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                style="@style/PrimaryColoredButton"
+                android:text="@string/save"
+                app:font_semibold="true"
+                android:layout_marginBottom="@dimen/_25sdp"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_layout"
+        android:backgroundTint="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:elevation="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/ic_launch"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+

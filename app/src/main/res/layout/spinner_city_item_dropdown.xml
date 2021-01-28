@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.worker.app.utility.MyTextView
+        android:id="@android:id/text1"
+        android:ellipsize="marquee"
+        android:layout_width="match_parent"
+        android:padding="@dimen/_15sdp"
+        android:text="asdfasfd"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

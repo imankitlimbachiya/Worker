@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="googleAPIKey">AIzaSyA2vAa9ZnFNl0WYCGyGSUHhH7p80PWgT-Y</string><!--AIzaSyD8E9klNqaDsjLSALgMdsqCO-il0wVMSeA-->
+
+    <string name="app_name">تطبيق عمالة</string>
+    <string name="open">افتح</string>
+    <string name="close">اغلاق</string>
+
+    <string name="d1_profile">ملفي</string>
+    <string name="d2_orders">طلبات الإستقدام</string>
+    <string name="d3_my_requests">طلباتي الخاصة</string>
+    <string name="d4_my_wallet">محفظتي</string>
+    <string name="d5_language">اللغة</string>
+    <string name="d6_settings">الإعدادات</string>
+    <string name="d7_about_worker">عن تطبيق عمالة</string>
+    <string name="d8_contact_us">اتصل بنا</string>
+    <string name="d9_privacy_policy"><![CDATA[سياسة الخصوصية]]></string>
+    <string name="d10_terms_condition">الشروط والأحكام</string>
+    <string name="d11_logout">تسجيل خروج</string>
+    <string name="d12_login">تسجيل الدخول</string>
+    <string name="d13_myRequestOrder">طلب</string>
+    <string name="d14_myWorker">تفاصيل عمالتي</string>
+    <string name="findBCat">البحث حسب الفئة</string>
+    <string name="exploreWorker">تصفح العمال المعتمدين حسب الفئة</string>
+    <string name="ebCountry">استكشاف حسب البلد</string>
+    <string name="exploreBCountry">تصفح العمال المعتمدين حسب البلد</string>
+    <string name="strShowAll">عرض الكل</string>
+    <string name="allResults">جميع النتائج</string>
+    <string name="strProfiles">3650 نتيجة</string>
+    <string name="strLanguages">اللغة</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="mobile_number_email">رقم الجوال / البريد الإلكتروني</string>
+    <string name="forget_password">هل نسيت كلمة المرور؟</string>
+    <string name="sign_up">تسجيل جديد</string>
+    <string name="about_workers_app">حول تطبيق عمالة</string>
+    <string name="register_in_workers_app_as_individual">تسجيل حساب الأفراد</string>
+    <string name="name">الإسم</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="mobile_number">رقم الهاتف المحمول</string>
+    <string name="password">كلمة المرور</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="company_name">اسم الشركة</string>
+    <string name="register_in_workers_app_as_corporate">تسجيل حساب قطاع الأعمال</string>
+    <string name="noData">لم يتم العثور على عامل ...</string>
+    <string name="individual_account">حساب أفراد</string>
+    <string name="corporate_account">حساب قطاع الأعمال</string>
+    <string name="alertlogout">هل تريد بالتأكيد تسجيل الخروج؟</string>
+    <string name="alertdeleterequest">هل أنت متأكد أنك تريد إلغاء طلب العامل؟</string>
+    <string name="alertdeletedocument">هل تريد بالتأكيد حذف المستند؟</string>
+    <string name="alertdeleteorder">هل أنت متأكد أنك تريد إلغاء الطلب؟</string>
+    <string name="removedocument">إزالة المستند</string>
+    <string name="cancelorder">الغاء الطلب</string>
+    <string name="cancerequest">إلغاء طلب عامل</string>
+    <string name="city">المدينة</string>
+    <string name="Yes">نعم</string>
+    <string name="No">لا</string>
+    <string name="city_select">اختر مدينة</string>
+
+    //My Request//
+    <string name="my_request">طلباتي الخاصة</string>
+    <string name="requested_workers_detail">تفاصيل العمال المطلوبة</string>
+    <string name="txt_total_amount">المبلغ الإجمالي</string>
+    <string name="txt_total_worker">مجموع العمال المطلوبين</string>
+    <string name="select_language">Select Language</string>
+    <string name="arabic_txt_select_language">إختر اللغة</string>
+    <string name="agreement_policy">سياسة خاصة</string>
+    <string name="agree_policy">سياسة الاتفاقية</string>
+    <string name="terms_and_condition_txt">الشروط والأحكام</string>
+    <string name="our_promises">مهمتنا</string>
+
+    // Thank you//
+    <string name="thankyou">شكرا</string>
+    <string name="backButton">اضغط للعودة</string>
+    <string name="thankYou_description1">سيقوم فريق الدعم لدينا بالبحث في قواعد البيانات لدينا وترشيح العاملين لكم بناءً على طلبكم</string>
+    <string name="thankYou_description2">قد يستغرق هذا الإجراء 24 ساعة في بعض الأوقات، لذا سيتم تنبيهكم عبر البريد الإلكتروني والرسائل القصيرة وعبر تطبيق عمالة </string>
+    <string name="from_where_you_want_get_workers">نرجو تحديد جنسية العمالة التي تبحث عنها؟</string>
+    <string name="search_text">البحث عن...</string>
+    <string name="explore_text">تصفح عمالنا المعتمدين حسب فئة التخصص</string>
+    <string name="explore_text11">تصفح عمالنا المعتمدين حسب الدولة</string>
+
+    // My Request Listing//
+    <string name="myrequestlisting">قائمة طلباتي الخاصة</string>
+    <string name="workersDetail">تفاصيل العمال المطلوبة</string>
+    <string name="requst_id">رقم الطلب</string>
+    <string name="nationality">الجنسية</string>
+    <string name="category">فئة الإختصاص</string>
+    <string name="requested_workers">عدد العمالة</string>
+    <string name="totalmatchingworkers">العمالة المطابقة لطلبك</string>
+    <string name="tab_to_view">اضغط للعرض</string>
+    <string name="status">حالة الطلب الخاص</string>
+    <string name="inprogress">جاري التحضير</string>
+    <string name="viewrequest">عرض الطلب</string>
+    <string name="requst_date">تاريخ الطلب</string>
+
+    //My Order Listing//
+    <string name="myorderlisting">قائمة طلبات الإستقدام</string>
+    <string name="total_contract_fees">إجمالي رسوم التعاقد</string>
+    <string name="add_ons_services">الخدمات الإضافية</string>
+    <string name="discount">خصم</string>
+    <string name="total">المجموع</string>
+    <string name="download_invoice">تحميل الفاتورة</string>
+    <string name="download_contract">تحميل العقد</string>
+    <string name="order_id">رقم الطلب</string>
+    <string name="order_date">تاريخ الطلب</string>
+    <string name="cancel_">الغاء الطلب</string>
+
+    // Order summary //
+    <string name="order_summary">ملخص الطلب</string>
+    <string name="slect_your_service">في حال رغبتم يمكنكم اضافة المزيد من الخدمات اللوجستية </string>
+    <string name="info1">تخليص تأشيرة العمالة في المطار وإيصاله الى العنوان المحدد</string>
+    <string name="more_info">المزيد من المعلومات</string>
+    <string name="info2">إيواء العامل واقامة محدودة</string>
+    <string name="please_select_location">يرجى تحديد موقع اقامة العامل</string>
+    <string name="please_select_work_location">يرجى اختيار موقع عمل العامل - قد يختلف موقع العمل عن السكن *</string>
+    <string name="map_view">عرض الخريطة</string>
+    <string name="apply">تطبيق</string>
+    <string name="pay_now">ادفع الآن</string>
+    <string name="coupuon_code">أضف كود الخصم</string>
+    <string name="validaddress">الرجاء إدخال عنوان صحيح</string>
+    <string name="validworkaddress">الرجاء إدخال عنوان عمل صحيح</string>
+    <string name="applycoupon">يرجى إدخال رمز القسيمة</string>
+    <string name="youhave">لديك</string>
+    <string name="sarinyourwallet">ريال في محفظتك</string>
+    <string name="usedwalletamount">الرجاء إدخال مبلغ المحفظة</string>
+    <string name="wallet_amount">مبلغ المحفظة لديك</string>
+    <string name="vat">ضريبة القيمة المضافة</string>
+    <string name="gps">تم إيقاف تشغيل GPS</string>
+    <string name="gpsalert">لم يتم تفعيل صلاحية الخرائط ؟ هل تريد الذهاب إلى قائمة الإعدادات؟</string>
+    <string name="gpsetting">الإعدادات</string>
+    <string name="gpcancel">إلغاء</string>
+    <string name="couponalert">لا يمكنك تطبيق مبلغ القسيمة أكثر من رسوم عقد العامل</string>
+    <string name="couponRemove">إزالة</string>
+    <string name="removeCoupon">تمت إزالة القسيمة بنجاح</string>
+    <string name="cpn1">you cannot apply coupon on VAT and add-ons services</string>
+
+    //Notification //
+    <string name="notification_alert">تفعيل التنبيهات </string>
+
+    //Wallet //
+    <string name="my_wallet">محفظتي</string>
+    <string name="wallet_history">تاريخ العمليات</string>
+    <string name="Order_id">رقم الطلب:</string>
+    <string name="reedeem_your_voucher_now">استبدل القسيمة المالية الآن</string>
+    <string name="enterwalletamountmustbelessthen">المبلغ أكثر من رسوم إستقدام العامل</string>
+    <string name="wallet_success">تم صرف المبلغ من خلال المحفظة بنجاح</string>
+    <string name="walMsg">يجب أن يكون المبلغ المدخل أقل من مبلغ المحفظة</string>
+    <string name="walMsg1">يجب أن يكون المبلغ المدخل أقل من المبلغ الإجمالي</string>
+
+    //Visa Detail//
+    <string name="visa_detail">تفاصيل التأشيرة</string>
+    <string name="please_upload_your_id_visa">يرجى إرفاق صورة الهوية الخاصة بك / التأشيرة</string>
+    <string name="please_write_your_id_number">يرجى كتابة رقم هوية المستقدم في الخانة الفارغة </string>
+    <string name="you_can_use_camera">قم بالنقر على الايقونة الجانبية لارفاق صورة الهوية</string>
+    <string name="you_can_use_camera_to_upload">يجب ارفاق صورة التاشيرة حسب الدولة المحددة بالنقر على الايقونة الجانبية</string>
+    <string name="country_name">اسم الدولة :</string>
+    <string name="click_here">انقر هنا</string>
+    <string name="next">التالي</string>
+    <string name="opencamera">افتح الكاميرا</string>
+    <string name="choosefromgallery">اختر من الملفات</string>
+
+    //My Workers//
+    <string name="my_workers">عمالتي</string>
+    <string name="workers_name">اسم العامل</string>
+    <string name="contract_fees">رسوم الإستقدام</string>
+    <string name="timeline">معلومات الجدول الزمني</string>
+    <string name="all_my_workers">عمالتي المطلوب استقدامهم</string>
+    <string name="completed">تم التنفيذ</string>
+    <string name="on_going">جاري العمل</string>
+    <string name="no_records_found">لا توجد بيانات او سجلات  !</string>
+
+    //View request detail
+    <string name="view_request_details">عرض تفاصيل الطلب</string>
+    <string name="country">الدولة</string>
+    <string name="age_range">الفئة العمرية المطلوبة</string>
+    <string name="total_categories">الفئات</string>
+    <string name="categoryname">اسم الفئة</string>
+    <string name="sub_category">التخصص</string>
+    <string name="quantity">العدد المطلوب</string>
+    <string name="worker_name">اسم العامل</string>
+    <string name="religon">الديانة</string>
+    <string name="age">العمر</string>
+    <string name="sar">SAR</string>
+    <string name="gender">الجنس</string>
+    <string name="networkcheck">networkcheck</string>
+    <string name="alertfirstname">أدخل الاسم</string>
+    <string name="alertfirstnamec">يرجى إدخال اسم الشركة الخاصة بك</string>
+    <string name="alertEmailAddress">أدخل عنوان البريد الالكتروني.</string>
+    <string name="alertEmailAddressandmobile">الرجاء إدخال عنوان البريد الإلكتروني أو رقم الجوال</string>
+    <string name="alertValid_Email_Mobile">البريد الإلكتروني أو رقم الجوال غير صحيح</string>
+    <string name="alertmobile">أدخل رقم الجوال</string>
+    <string name="alertcompName">يرجى إدخال اسم الشركة</string>
+    <string name="alertpassword">أدخل كلمة المرور</string>
+    <string name="alertcity">يرجى تحديد مدينتك</string>
+    <string name="alertnewpassword">أدخل كلمة مرور جديدة</string>
+    <string name="alertoldpassword">أدخل كلمة المرور القديمة.</string>
+    <string name="alertConfirmpassword">تأكيد كلمة المرور.</string>
+    <string name="alertConfirmpasswordandpassword">كلمة المرور وتأكيد كلمة المرور غير متطابقين</string>
+    <string name="alertvalidemail">أدخل عنوان بريد إلكتروني صحيح..</string>
+    <string name="alertvalidpasswordi">الرجاء إدخال كلمة مرور 5 خانات على الأقل</string>
+    <string name="alertvalidpassword">يجب أن تكون كلمة المرور أكثر من 4 خانات</string>
+    <string name="alertvalidpasswordc">يرجى إدخال الأقل 5 خانات لتأكيد كلمة المرور</string>
+    <string name="alertvalidmobile">يجب أن يكون رقم الهاتف بين 8 إلى 13 رقمًا</string>
+    <string name="logout">تسجيل خروج..</string>
+    <string name="are_you_sure_logout">هل تريد بالتأكيد الخروج؟</string>
+    <string name="invalid_password">رمز المرور خاطئ</string>
+    <string name="invalid_mobile">رقم جوال غير صحيح</string>
+    <string name="invalid_name">اسم غير صالح </string>
+    <string name="confirm">تأكيد</string>
+    <string name="cancel">لا</string>
+    <string name="skip">Skip تخطي</string>
+    <string name="about_worker">عن تطبيق عمالة</string>
+    <string name="contact_us">اتصل بنا</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="forgot_password">هل نسيت كلمة المرور؟</string>
+    <string name="you_don_t_remember_your_password">يرجى إدخال رقم الجوال / البريد الإلكتروني الذي استخدمته للتسجيل. سنرسل لك كلمة مرور جديدة.</string>
+    <string name="send">إرسال</string>
+    <string name="title">عنوان</string>
+    <string name="my_profile">ملفي </string>
+    <string name="name_or_company_name">الاسم</string>
+    <string name="comp_name">اسم الشركة</string>
+    <string name="submit">حفظ التعديلات</string>
+    <string name="you_want_to_change_your_password_enter_valid_detail">يرجى ملء الحقول التالية لتعديل كلمة المرور الخاصة بك</string>
+    <string name="old_password">كلمة المرور القديمة</string>
+    <string name="change__password">تغيير كلمة المرور</string>
+    <string name="new_password">كلمة المرور الجديدة</string>
+    <string name="change_password">تغيير كلمة المرور</string>
+    <string name="register_with_us">سجل معنا</string>
+    <string name="sign_up_now_and_select_your_account_type">اختر نوع حسابك وسجل الآن</string>
+    <string name="terms_amp_condition"><![CDATA[الشروط والأحكام]]></string>
+    <string name="arabic_medical_staff">طاقم طبي</string>
+    <string name="medical_staff">Medical Staff</string>
+    <string name="find_by_subcategory">البحث حسب التخصص</string>
+    <string name="explore_our_certified_workers_by_category">تصفح عمالنا المعتمدين حسب الفئة</string>
+    <string name="terms_amp_conditions"><![CDATA[الشروط والأحكام]]></string>
+    <string name="search_location">بحث عن الموقع</string>
+    <string name="get_address">الحصول على العنوان</string>
+    <string name="checkid">الرجاء إدخال رقم الهوية الخاص بك.</string>
+    <string name="checkidproof">يرجى إرفاق صورة الهوية الخاصة بك.</string>
+    <string name="checkcountryvisaproof">يرجى تحديث التأشيرة .</string>
+    <string name="name_z_to_a">الاسم: أ إلى ي</string>
+    <string name="name_a_to_z">الاسم: من الألف إلى الياء</string>
+    <string name="ContractFees_high_to_low">رسوم الإستقدام : من الأعلى إلى الأقل</string>
+    <string name="ContractFees_low_to_high">رسوم الإستقدام : من الأقل إلى الأعلى</string>
+    <string name="our_recommendation">توصياتنا</string>
+    <string name="sort_by">صنف حسب :</string>
+
+    // workerListing &amp; Profile
+    <string name="profile">نتيجة</string>
+    <string name="monthly_salary">راتب شهري</string>
+    <string name="year">عام</string>
+    <string name="view_profile">معلومات العامل</string>
+    <string name="hire_now">إستقدم الآن</string>
+    <string name="birthday">تاريخ الميلاد</string>
+    <string name="education">المستوى العلمي</string>
+    <string name="experience">الخبرات العملية</string>
+    <string name="attachment">المرفقات</string>
+    <string name="more_information_about_the_worker_you_can_see_his_video_and_cv">مزيد من المعلومات حول العامل:</string>
+    <string name="see_video">شاهد الفيديو</string>
+    <string name="view_cv">السيرة الذاتية</string>
+    <string name="add_to_my_request">أضف إلى طلب الإستقدام</string>
+
+    // applyVisa Activity
+    <string name="attach_your_id_please">من فضلك قم بارفاق صورة الهوية الخاصة بك</string>
+    <string name="workers_number">عدد العمال:</string>
+
+    //createRequest Step 1
+    <string name="create_request">إنشاء طلب خاص</string>
+    <string name="you_select">لقد قمت بتحديد دولة</string>
+    <string name="Search_for">البحث عن...</string>
+
+    //createRequest Step 2
+    <string name="select_your_workers_category">اختر فئة العمالة التي تريد استقدامها</string>
+    <string name="other_category">Others</string>
+    <string name="arabic_other_category">فئات غير موجودة بالقائمة</string>
+    <string name="search_your_category">أضف فئتك المطلوبة</string>
+    <string name="category_name">اسم الفئة التي تبحث عنها</string>
+    <string name="save">إضافة</string>
+    <string name="sendMsg">أرسل رسالة</string>
+
+    //createRequest Step 3
+    <string name="staff_gender">تحديد الجنس</string>
+    <string name="staff_age_range">الفئة العمرية للموظفين</string>
+    <string name="let_us_know_workers_required_for_each_category">نرجو اضافة العدد المطلوب للعمالة امام اسم كل فئة قمتم باختيارها</string>
+    <string name="total_workers_required_is">مجموع العمال المطلوب هو</string>
+    <string name="total_workers_required_are">مجموع العمالة المطلوبة</string>
+    <string name="done">تقديم الطلب</string>
+
+    // Matching request Activity
+    <string name="matching_your_request">مطابقة طلبك</string>
+    <string name="we_not_found">لم نعثر على عمال لمطابقة طلباتك السابقة</string>
+    <string name="we_found">وجدنا</string>
+    <string name="worker_matching">عمال يطابقون طلباتك السابقة</string>
+    <string name="profile_">بروفايل</string>
+
+    // option menu
+    <string name="remove">الغاء الطلب</string>
+    <string name="delete">إزالة المستند</string>
+
+    // drawer menu
+    <string name="guest">زائر</string>
+    <string name="hiii">مرحبا</string>
+
+    // intro screen
+    <string name="next_">Next التالي</string>
+    <string name="skip_">Skip تخطي</string>
+
+    // view order delivery Activity
+    <string name="departed_date">تاريخ المغادرة</string>
+    <string name="from">من عند</string>
+    <string name="arrive">يصل</string>
+    <string name="to">إلى</string>
+
+    // Setting Activity
+    <string name="setting">الاعدادات</string>
+    <string name="notification">التنبيهات</string>
+    <string name="allow_notification">السماح بالتنبيهات</string>
+    <string name="marketing_preferences">تفضيلات التسويق</string>
+    <string name="security_amp_location"><![CDATA[الأمن والموقع]]></string>
+    <string name="automatic_location">الموقع التلقائي</string>
+
+    // Announcement Activity
+    <string name="my_announcement">إعلانات</string>
+
+    // ContactUs Activity
+    <string name="name_c">الإسم</string>
+    <string name="email_c">البريد الإلكتروني</string>
+    <string name="phone_c">رقم الجوال</string>
+    <string name="Question_c">السؤال</string>
+    <string name="alertquestions">أدخل الأسئلة</string>
+
+    // Reload Activity
+    <string name="network_error">خطأ في الشبكة</string>
+    <string name="network_error_check">يرجى التحقق من اتصال الشبكة الخاص بك</string>
+    <string name="network_reload">انقر لإعادة التحميل</string>
+
+    // Payment Activity
+    <string name="payment">ادفع الآن</string>
+    <string name="card_number">رقم البطاقة</string>
+    <string name="card_holder_name">إسم صاحب البطاقة</string>
+    <string name="card_exp_date">تاريخ انتهاء البطاقة</string>
+    <string name="cvv_number">CVV رقم</string>
+    <string name="payment_sure">هل أنت متأكد أنك تريد الدفع من خلال هذه البطاقة؟</string>
+    <string name="alertcardno">الرجاء إدخال رقم البطاقة</string>
+    <string name="valid_card_number_length">الرجاء إدخال رقم بطاقة صالح</string>
+    <string name="alertcardholdername">الرجاء إدخال اسم حامل البطاقة</string>
+    <string name="alertcardexp">يرجى تحديد إنتهاء تاريخ البطاقة</string>
+    <string name="alertcardcvv">الرجاء إدخال رقم بطاقة CVV</string>
+    <string name="paymentpay">دفع</string>
+    <string name="walValidation">الدفع عبرالمحفظة غير صالح</string>
+    <string name="walValidationM">لا يمكنك تطبيق مبلغ المحفظة أكثر من المبلغ الإجمالي</string>
+    <string name="text_confirm">إختر</string>
+    <string name="text_cancel">إلغاء</string>
+    <string name="cardTypeMsg">يرجى اختيار نوع البطاقة</string>
+    <string name="somethingWrong">عفوا ! هناك خطأ ما! حاول مرة اخرى..</string>
+    <string name="fileSizeCheck">يجب أن يكون حجم الملف أقل من 15 ميغابايت</string><!--File size must be less than 15 mb-->
+    <string name="cardCredential">يرجى التحقق من تفاصيل البطاقة</string>
+    <string name="NoVideo">لم يتم توفير فيديو</string>
+    <string name="buffering">جارٍ التخزين المؤقت للفيديو ، يُرجى الانتظار ...</string>
+
+    <string name="newVersion">يتوفر إصدار جديد</string>
+    <string name="plzUpdate">يرجى تحديث التطبيق لتجربة سلسة.</string>
+    <string name="cont">استمر</string>
+    <string name="categ">يرجى إدخال اسم الفئة</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearVideoDialog"
+    android:elevation="@dimen/_2sdp"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blackTransparent"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/progressBar"
+        android:padding="@dimen/_120sdp"
+        android:background="@color/colorViewLightGrey"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/linearHideVideo"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_3sdp"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:background="@drawable/bg_black_square"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/imgCancelVideoDialog"
+            android:src="@drawable/ic_close_icon"
+            android:layout_width="@dimen/_20sdp"
+            android:padding="@dimen/_3sdp"
+            android:tint="@color/colorWhite"
+            android:layout_height="@dimen/_20sdp"/>
+
+    </LinearLayout>
+</RelativeLayout>

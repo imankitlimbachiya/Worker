@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.worker.app.utility.MyTextView
+            style="@style/TitleTextBigBlack"
+            android:text="@string/findBCat"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            app:font_semibold="true" />
+
+        <com.worker.app.utility.MyTextView
+            style="@style/TitleTextSmallGrey"
+            android:text="@string/exploreWorker"
+            android:layout_marginRight="@dimen/_15sdp"
+            app:font_semibold="true" />
+
+        <SearchView
+            android:id="@+id/SearchCategory"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:iconifiedByDefault="false"
+            android:searchIcon="@null"
+            android:gravity="center_vertical"
+            android:queryHint="@string/Search_for"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:queryBackground="@android:color/transparent"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:background="@drawable/search_bg"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/searchhintcolor"
+            android:layout_marginRight="@dimen/_15sdp">
+
+        </SearchView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

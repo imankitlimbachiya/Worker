@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.SignUpIndividualActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:src="@drawable/app_logo" />
+
+                    <com.worker.app.utility.MyTextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:gravity="center"
+                        android:text="@string/register_in_workers_app_as_individual"
+                        android:textColor="#323232"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_semibold="true" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:padding="@dimen/_10sdp"
+                    android:rotation="180"
+                    android:src="@drawable/arrow_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_13sdp"
+                android:orientation="vertical">
+
+                <com.worker.app.utility.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:textColor="#323232"
+                    android:textSize="@dimen/_13sdp"
+                    app:font_semibold="true" />
+
+                <com.worker.app.utility.MyEditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_36sdp"
+                    android:background="@drawable/edt_bg_selector_individual"
+                    android:gravity="right"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="#9FA0A1"
+                    android:textCursorDrawable="@drawable/color_cursor_individual"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/_13sdp" />
+
+                <com.worker.app.utility.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="@string/email"
+                    android:textColor="#323232"
+                    android:textSize="@dimen/_13sdp"
+                    app:font_semibold="true" />
+
+                <com.worker.app.utility.MyEditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_36sdp"
+                    android:background="@drawable/edt_bg_selector_individual"
+                    android:gravity="right"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColor="#9FA0A1"
+                    android:textCursorDrawable="@drawable/color_cursor_individual"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/_13sdp" />
+
+                <com.worker.app.utility.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="@string/mobile_number"
+                    android:textColor="#323232"
+                    android:textSize="@dimen/_13sdp"
+                    app:font_semibold="true" />
+
+                <com.worker.app.utility.MyEditText
+                    android:id="@+id/edt_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_36sdp"
+                    android:background="@drawable/edt_bg_selector_individual"
+                    android:gravity="right"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLength="13"
+                    android:singleLine="true"
+                    android:textColor="#9FA0A1"
+                    android:textCursorDrawable="@drawable/color_cursor_individual"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/_13sdp" />
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edt_bg_selector_individual"
+                    android:orientation="horizontal">
+
+
+                    <com.worker.app.utility.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/city"
+                        android:textColor="#323232"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_semibold="true" />
+
+                    <com.worker.app.utility.MyTextView
+                        android:id="@+id/spinner_City"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/_50sdp"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="#9FA0A1"
+                        android:background="@android:color/transparent" />
+
+                    <ImageView
+                        android:id="@+id/down_arrow"
+                        android:layout_width="@dimen/_60sdp"
+                        android:padding="@dimen/_20sdp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/gretter_down" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginStart="@dimen/_minus13sdp"
+                    android:layout_marginEnd="@dimen/_minus13sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edt_bg_selector_individual"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinnerCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </RelativeLayout>
+
+                <com.worker.app.utility.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="@string/password"
+                    android:textColor="#323232"
+                    android:textSize="@dimen/_13sdp"
+                    app:font_semibold="true" />
+
+                <com.worker.app.utility.MyEditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_36sdp"
+                    android:background="@drawable/edt_bg_selector_individual"
+                    android:gravity="right"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="#9FA0A1"
+                    android:textCursorDrawable="@drawable/color_cursor_individual"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/_13sdp" />
+
+                <com.worker.app.utility.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="@string/confirm_password"
+                    android:textColor="#323232"
+                    android:textSize="@dimen/_13sdp"
+                    app:font_semibold="true" />
+
+                <com.worker.app.utility.MyEditText
+                    android:id="@+id/edt_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_36sdp"
+                    android:background="@drawable/edt_bg_selector_individual"
+                    android:gravity="right"
+                    android:imeOptions="actionDone|actionGo"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="#9FA0A1"
+                    android:textCursorDrawable="@drawable/color_cursor_individual"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/_13sdp" />
+
+                <com.worker.app.utility.MyButton
+                    android:id="@+id/sign_up"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    style="@style/PrimaryColoredButton"
+                    android:text="@string/sign_up"
+                    app:font_semibold="true"
+                    android:layout_marginBottom="@dimen/_25sdp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
